@@ -21,4 +21,6 @@ void main(){
  else{
   print('Prod ready');
  }
+
+ print(environment.values.toString().toUpperCase());
 }

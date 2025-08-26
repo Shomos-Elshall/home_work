@@ -4,24 +4,32 @@
  safety where needed */
 
  void main(){
-    String? path = "/profile";
+    Map <String , String> routing = 
+    { 
+      '/' : 'home',
+      '/products' : "products",
+      '/profile' : 'profile'
 
-    if(path != null){
-        switch(path){
-            case '/':
-            print("This roue for home page");
-            break;
+    };
 
-            case '/products':
-            print("This route for products page");
-            break;
+    String path = '/';
+    String currentScreen;
 
-            case "/profile" :
-            print("This route for your profile page");
-            break;
-        }
+    switch(path){
+     case '/':
+     currentScreen = routing['/']!;
+     break;
+
+     case '/products':
+     currentScreen = routing['/products']!;
+     break;
+
+     case '/profile':
+     currentScreen = routing['/profile']!;
+     break;
+
+     default :
+     currentScreen = routing['/']!;
     }
-    else{
-        print("Invalid route");
-    }
+    print(currentScreen);
  }

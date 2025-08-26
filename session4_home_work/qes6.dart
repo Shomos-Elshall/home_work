@@ -5,9 +5,9 @@ If the list is null or empty, print 'No scores'.
 
 
  void main(){
-  List <int>? scores = [10,20,30,40];
+  List <int>? scores = null;
 
-  if (scores == null){
+  if ((scores?.isEmpty ?? true)||scores == null){
     print("No scores");
   }
   else{
