@@ -7,7 +7,6 @@ void main(){
 
 bool containsDuplicate(List<int> nums) {
     Set<int> uniqueNums = nums.toSet();
-
     if(uniqueNums.length < nums.length){
       return true;
     }
