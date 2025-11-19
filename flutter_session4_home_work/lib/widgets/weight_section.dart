@@ -9,7 +9,7 @@ class WeightSection extends StatefulWidget {
 
 class _WeightSectionState extends State<WeightSection> {
   int weight = 50;
-  int age = 18;
+
   @override
   Widget build(BuildContext context) {
     return Container(
